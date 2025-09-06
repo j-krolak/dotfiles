@@ -1,0 +1,33 @@
+
+[font]
+size=10.0
+
+[font.bold]
+family = "MesloLGS NF"
+style = "Bold"
+
+[font.italic]
+family = "MesloLGS NF"
+style = "Italic"
+
+[font.normal]
+family = "MesloLGS NF"
+style = "Regular"
+
+[window.padding]
+x = 5
+y = 5
+
+[window]
+opacity=0.5
+
+[cursor.style]
+blinking = "always"
+
+[general]
+import = [
+        "~/.config/alacritty/dracula_plus.toml"
+]
+
+[env]
+TERM = "xterm-256color"
