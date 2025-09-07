@@ -1,13 +1,28 @@
 {
     "height": 42, // Waybar height (to be removed for auto height)
     "spacing": 4, // Gaps between modules (4px)
-    "modules-left": ["clock"],
+    "modules-left": ["clock", "mpris"],
     "modules-center": ["hyprland/workspaces"],
     "modules-right": ["temperature", "cpu", "memory", "pulseaudio", "network", "battery"],
     // Modules configuration
+     "mpris": {
+        "format": "{player_icon} {title} ",
+        "format-paused": "{status_icon} {title}",
+        "title-len": 30,
+        "player-icons": {
+            "default": "⏸",
+            "mpv": "🎵"
+        },
+        "status-icons": {
+            "paused": "▶" 
+        }
+    }, 
     "clock": {
         "format": "{:%I:%M %p - %a %d %b %G}",
 	"tooltip": false
+    },
+    "hyprland/workspaces" : {
+        "format" : "{name}"
     },
     "cpu": {
         "format": "CPU: {usage}%",
@@ -38,7 +53,7 @@
     },
     "pulseaudio": {
         // "scroll-step": 1, // %, can be a float
-        "format": "{icon} {volume}%",
+       "format": "{icon} {volume}%",
         "format-bluetooth": "{icon} {volume}% ",
         "format-bluetooth-muted": "MUTE ",
         "format-muted": "MUTE",
