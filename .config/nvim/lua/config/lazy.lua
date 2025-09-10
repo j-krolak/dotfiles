@@ -27,8 +27,10 @@ require("lazy").setup({
 			"folke/tokyonight.nvim",
 			config = function()
 				vim.cmd.colorscheme "tokyonight"
-				vim.api.nvim_set_hl(0, "NormalFloat", { bg = "NONE" })
-				vim.api.nvim_set_hl(0, "FloatBorder", { bg = "NONE" })
+
+				vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
+				vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
+				vim.api.nvim_set_hl(0, "FloatBorder", { bg = "none" })
 			end
 		},
 		{ import = "plugins" },
