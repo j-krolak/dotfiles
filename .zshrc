@@ -118,3 +118,11 @@ alias governor="cat /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor"
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
+
+# pnpm
+export PNPM_HOME="/home/jakub/.local/share/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
