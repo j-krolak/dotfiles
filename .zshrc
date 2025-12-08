@@ -1,5 +1,5 @@
-if [[ $- == *i* ]] && [[ -z $TMUX ]]; then
-    neofetch
+if [[ $- == *i* ]] && [[ -z $TMUX ]] && [[ -z $NVIM ]]; then
+    fastfetch
 fi
 
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
@@ -129,3 +129,26 @@ esac
 
 # Android sdk
 export ANDROID_HOME=$HOME/Android/Sdk
+[ -f /opt/miniconda3/etc/profile.d/conda.sh ] && source /opt/miniconda3/etc/profile.d/conda.sh
+
+
+# Qemu
+export SDL_VIDEODRIVER=wayland
+
+# Aliases for nvim
+alias v=nvim
+alias vim=nvim
+
+# Aliases for navigation
+alias ..="cd .."
+alias ...="cd ../.."
+
+# Aliases for github
+alias g="git"
+alias gc="git commit -m"
+
+alias po="papis open"
+alias pa="papis add"
+
+# To customize prompt, run `p10k configure` or edit ~/dotfiles/.p10k.zsh.
+[[ ! -f ~/dotfiles/.p10k.zsh ]] || source ~/dotfiles/.p10k.zsh

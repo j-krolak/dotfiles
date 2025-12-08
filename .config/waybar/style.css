@@ -8,7 +8,7 @@
 
 window#waybar {
     color: #F8F9F2;
-    background-color: rgba(0,0,0,0);
+		background: rgba(0, 0, 0, 0.0);
 }
 
 window#waybar.hidden {
@@ -57,7 +57,7 @@ button:hover {
 }
 
 #workspaces button.active {
-	color: yellow;
+	color: #ffdd00;
 }
 
 #workspaces button.focused {

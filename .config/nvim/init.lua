@@ -1,4 +1,5 @@
 require("config.lazy")
+require("config.keymap")
 
 vim.opt.shiftwidth = 2
 vim.opt.clipboard = "unnamedplus"
