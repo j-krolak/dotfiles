@@ -146,6 +146,7 @@ alias ...="cd ../.."
 # Aliases for github
 alias g="git"
 alias gc="git commit -m"
+alias lg="lazygit"
 
 alias po="papis open"
 alias pa="papis add"
