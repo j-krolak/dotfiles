@@ -13,6 +13,10 @@ return {
 				follow_current_file = {
 					enabled = true,
 				},
+
+				filters = {
+					dotfiles = false
+				}
 			},
 			event_handlers = {
 				{

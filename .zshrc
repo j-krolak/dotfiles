@@ -1,6 +1,6 @@
-if [[ $- == *i* ]] && [[ -z $TMUX ]] && [[ -z $NVIM ]]; then
-    fastfetch
-fi
+#if [[ $- == *i* ]] && [[ -z $TMUX ]] && [[ -z $NVIM ]]; then
+#    fastfetch
+#fi
 
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
@@ -14,6 +14,7 @@ fi
 export PATH=$HOME/.local/bin:/usr/local/bin:$PATH
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
+export TERM=xterm-256color
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -118,7 +119,8 @@ alias governor="cat /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor"
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
-
+# Use local directoty for global installations
+export PATH=$PATH:~/.npm-global/bin
 # pnpm
 export PNPM_HOME="/home/jakub/.local/share/pnpm"
 case ":$PATH:" in
@@ -139,6 +141,9 @@ export SDL_VIDEODRIVER=wayland
 alias v=nvim
 alias vim=nvim
 
+# Zoxide
+eval "$(zoxide init zsh)"
+
 # Aliases for navigation
 alias ..="cd .."
 alias ...="cd ../.."
@@ -151,5 +156,12 @@ alias lg="lazygit"
 alias po="papis open"
 alias pa="papis add"
 
+
+alias apr="apropos"
+
+# Aliases for docker
+alias dc="docker compose"
+
 # To customize prompt, run `p10k configure` or edit ~/dotfiles/.p10k.zsh.
 [[ ! -f ~/dotfiles/.p10k.zsh ]] || source ~/dotfiles/.p10k.zsh
+

@@ -1,2 +1,1 @@
-vim.keymap.set("n", "<alt>l", "<cmd>nohl<CR>", { desc = "Remove highlight" })
-vim.keymap.set("n", "gl", vim.diagnostic.open_float)
+vim.keymap.set("n", "<C-w>l", "<cmd>nohl<CR>", { desc = "Remove highlight" })

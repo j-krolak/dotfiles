@@ -1,12 +1,14 @@
 {
 	"height": 42, // Waybar height (to be removed for auto height)
 	"spacing": 4, // Gaps between modules (4px)
+	"position": "bottom",
 	"modules-left": [
-		"clock",
+		"custom/archicon",
+		"hyprland/workspaces",
 		"mpris"
 	],
 	"modules-center": [
-		"hyprland/workspaces"
+		"clock"
 	],
 	"modules-right": [
 		"temperature",
@@ -17,6 +19,10 @@
 		"battery"
 	],
 	// Modules configuration
+	"custom/archicon": {
+		"format": "   ",
+		"tooltip": false
+	},
 	"mpris": {
 		"format": "{player_icon} {title} ",
 		"format-paused": "{status_icon} {title}",
@@ -113,7 +119,10 @@
 			"2": "Ⅱ",
 			"3": "Ⅲ",
 			"4": "Ⅳ",
-			"5": "Ⅴ"
+			"5": "Ⅴ",
+			"6": "Ⅵ",
+			"7": "Ⅶ",
+			"8": "Ⅷ"
 		},
 		"sort-by-number": true
 	},

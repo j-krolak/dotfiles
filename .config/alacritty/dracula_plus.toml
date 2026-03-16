@@ -1,7 +1,7 @@
 # Colors (Dracula+)
 
 [colors.primary]
-background = '#212121'
+background = '#000000'
 foreground = '#F8F8F2'
 
 [colors.cursor]
