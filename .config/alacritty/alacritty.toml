@@ -19,14 +19,14 @@ x = 5
 y = 5
 
 [window]
-opacity=0.6
+opacity=1
 
 [cursor.style]
 blinking = "always"
 
 [general]
 import = [
-        "~/.config/alacritty/dracula_plus.toml"
+        "~/.config/alacritty/tokyonight.toml"
 ]
 
 [env]

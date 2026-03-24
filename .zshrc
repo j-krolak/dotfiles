@@ -1,7 +1,3 @@
-#if [[ $- == *i* ]] && [[ -z $TMUX ]] && [[ -z $NVIM ]]; then
-#    fastfetch
-#fi
-
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
@@ -132,7 +128,6 @@ esac
 # Android sdk
 export ANDROID_HOME=$HOME/Android/Sdk
 [ -f /opt/miniconda3/etc/profile.d/conda.sh ] && source /opt/miniconda3/etc/profile.d/conda.sh
-
 
 # Qemu
 export SDL_VIDEODRIVER=wayland
